@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(118, 118, 209);
+            color: white;
+            font: normal 25pt Arial;
+        }
+        h1{
+            color: orange;
+        }
+    </style>
+    <title>Curso JS</title>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //string / precisa converter em number(Number.parseInt/parseFloat)
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        /*window.alert('A soma dos valores é: ' + String(s) + '!') // + Concatenar*/
+
+        //template string
+        window.alert(`A soma dos valores ${n1} e ${n2} é: ${s}`) // + Concatenar
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // Converter para string - String(x) ou x.toString()
+    </script>    
+</body>
+</html>

@@ -18,10 +18,10 @@
 <body>
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição</p>
+    
     <script>
-        window.alert('Minha primeira mensagem')//Janela de alerta, vem antes de carregar a página
-        window.confirm('Esta gostando de JS?')//Janela de pergunta ok ou cancelar(S/N), vem antes de carregar a página
-        window.prompt('Qual é seu nome?')//Janela de digitação , vem antes de carregar a página
-    </script>
+        var nome = window.prompt('Qual é seu nome?')//Janela de digitação , vem antes de carregar a página
+        window.alert('E um prazer em te conhecer, ' + nome + '!') // + Concatenar
+    </script>    
 </body>
 </html>
