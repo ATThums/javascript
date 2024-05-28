@@ -9,13 +9,13 @@ function verificar() {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        var img = document.createElement('img') // cria um img em HTML / nesse caso, ao final da div
+        img.setAttribute('id', 'foto') // Cria um id='foto' dentro do img
         if (fsex[0].checked) {
             genero = 'Homem'
             if (idade < 10){
                 //criança
-                img.setAttribute('src', 'homem-crianca.png')
+                img.setAttribute('src', 'homem-crianca.png') //Altera o atributo src para a imagem desejada
             } else if (idade < 21) {
                 //jovem
                 img.setAttribute('src', 'homem-jovem.png')
